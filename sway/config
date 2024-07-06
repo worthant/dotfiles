@@ -210,8 +210,7 @@ bindsym $mod+r mode "resize"
 
     # tiles
     gaps inner 20
-    for_window [class=".*"] border pixel 1
-    for_window [class=".*"] titlebar none
+    default_border none
 
     # Rofi application launcher
     bindsym $mod+d exec "rofi -show drun"
