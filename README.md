@@ -22,5 +22,12 @@ Editor: Neovim
   - [ ] add flexible setup for having either 1 laptop monitor, or 1 27" work monitor
   - [ ] Unify shortcut map, some of them are so uncomfy :(
   - [ ] Add support for changing the volume using the wheel on my keyboard
+  - [ ] Check if everything works
+    - [ ] Discord
+    - [ ] Zoom
+    - [x] OBS
+    - [ ] Telegram call
+    - [ ] Microsoft Teams
+    - [ ] Google call
 - [ ] Kitty
   - [ ] Add small padding
