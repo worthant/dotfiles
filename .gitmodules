@@ -1,0 +1,6 @@
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:worthant/nvim-base.git
+[submodule "nvim-user"]
+	path = nvim-user
+	url = git@github.com:worthant/nvim-user.git
