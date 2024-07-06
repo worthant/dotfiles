@@ -6,6 +6,26 @@ Terminal: Kitty
 Shell: fish  
 Editor: Neovim  
 
+## Dotfiles repo config
+
+1. Clone repo, for example into `~/dev`
+2. Just add symbolic links for each needed module:
+
+```bash
+ln -s ~/dev/dotfiles/sway ~/.config/sway
+```
+
+- The structure should look like this:
+
+```
+~/.config
+├── sway -> ~/dotfiles/sway
+├── rofi -> ~/dotfiles/rofi
+├── waybar -> ~/dotfiles/waybar
+├── fish -> ~/dotfiles/fish
+└── nvim -> ~/dotfiles/nvim
+```
+
 ## TODO:
 
 - [ ] Waybar
@@ -31,3 +51,7 @@ Editor: Neovim
     - [ ] Google call
 - [ ] Kitty
   - [ ] Add small padding
+- [ ] Nvim
+  - [ ] Merge `base` & `user` configs into monolithic config
+  - [ ] Create a separate repo for mantaining merged config
+  - [ ] Add here as a submodule
