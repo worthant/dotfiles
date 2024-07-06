@@ -1,3 +1,0 @@
-[submodule "nvim-base"]
-	path = nvim-base
-	url = git@github.com:worthant/nvim-base.git
