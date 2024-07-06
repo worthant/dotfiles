@@ -55,3 +55,6 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [ ] Merge `base` & `user` configs into monolithic config
   - [ ] Create a separate repo for mantaining merged config
   - [ ] Add here as a submodule
+
+- [ ] Integrate add-ons [from here](https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway)
+
