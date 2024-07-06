@@ -1,10 +1,10 @@
 # Worthant's dotfiles
 
-OS: Fedora Linux Workstation 38
-Tiling VM: Sway
-Terminal: Kitty
-Shell: fish
-Editor: Neovim
+OS: Fedora Linux Workstation 38  
+Tiling VM: Sway  
+Terminal: Kitty  
+Shell: fish  
+Editor: Neovim  
 
 ## TODO:
 
