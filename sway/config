@@ -24,7 +24,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ## Graphics configuration:
 
     # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-    output * bg /usr/share/backgrounds/sway/luca-bravo-ii5JY_46xH0-unsplash.jpg fill
+    output * bg /usr/share/backgrounds/sway/breno-machado-in9-n0JwgZ0-unsplash.jpg fill
 
     # Disable the laptop monitor (assuming eDP-1)
     output eDP-1 disable
