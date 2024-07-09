@@ -36,6 +36,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [ ] Tweak color theme to the more bright one
     - [ ] Use hex color picker for this
   - [ ] Change time format to 24h
+  - [ ] !Add a box with current locale (us/ru)
 - [ ] Sway
   - [ ] Control for mx 3s mouse?
   - [ ] I want some theme picker logic to stop editing paths manually and see
