@@ -68,7 +68,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
         - [x] Check screen sharing (everything works firt couple touches, then can't use panels)
     - [x] OBS
         - [x] Check screen sharing (works perfectly smooth)
-        - [ ] Use `obs-cli` to automate some things in sway config
+        - [x] Use `obs-cli` to automate some things in sway config
     - [ ] Telegram call
     - [ ] Microsoft Teams
     - [x] Google call

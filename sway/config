@@ -224,4 +224,7 @@ bindsym $mod+r mode "resize"
     # Select area screenshot to clipboard
     bindsym Shift+Delete exec "~/.config/sway/scripts/select-area-screenshot.sh"
 
+    # OBS cli websocket control
+    bindsym Control+Shift+o exec obs-cmd recording toggle
+
 include /etc/sway/config.d/*
