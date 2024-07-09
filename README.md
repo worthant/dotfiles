@@ -29,10 +29,12 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 ## TODO:
 
 - [ ] Waybar
-  - [ ] Fix icon for RAM usage
+  - [x] Apply [this insane waybar](https://www.reddit.com/r/unixporn/comments/19csv7m/sway_fedora_sway_rice_new_wave_loving_this/)
   - [ ] Customize everything to my liking
-  - [ ] Try rounded corners
-  - [ ] Think about system color theme - cattpucin or something
+  - [x] Try rounded corners
+  - [ ] Tweak color theme to the more bright one
+    - [ ] Use hex color picker for this
+  - [ ] Change time format to 24h
 - [ ] Sway
   - [ ] Control for mx 3s mouse?
   - [ ] I want some theme picker logic to stop editing paths manually and see instant results
