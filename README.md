@@ -63,11 +63,16 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [ ] add flexible setup for having either 1 laptop monitor, or 1 27" work monitor
   - [ ] Check if everything works
     - [x] Discord
-    - [ ] Zoom
+        - [x] Check screen sharing (works only in browser)
+    - [x] Zoom
+        - [x] Check screen sharing (everything works firt couple touches, then can't use panels)
     - [x] OBS
+        - [x] Check screen sharing (works perfectly smooth)
+        - [ ] Use `obs-cli` to automate some things in sway config
     - [ ] Telegram call
     - [ ] Microsoft Teams
     - [x] Google call
+        - [x] Check screen sharing (works perfectly)
 - [ ] Kitty
   - [ ] Tweak theme colors to make it more readable (~too dark rn)
   - [ ] Add small padding
