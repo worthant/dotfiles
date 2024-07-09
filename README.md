@@ -46,6 +46,8 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [ ] Network management?
     - [x] nmcli
     - [ ] other gui?
+  - [x] Mouse Management? (Logitech MX master 3s)
+    - [x] `solaar`
   - [x] Bluetooth management?
     - [x] `blueman-manager`
     - [ ] Create a script for instant auto-connection to my xm4 heaphones
