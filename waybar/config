@@ -10,21 +10,28 @@
         "custom/launcher",
         "sway/workspaces",
         "custom/weather",
-	"mpd"
-	
+	    "mpd"	
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
     	"mpris",
-	"backlight",
-	"pulseaudio",
+	    "backlight",
+	    "pulseaudio",
         "network",
         "battery",
         "custom/powermenu"
-        
     ],
+    "sway/workspaces": {
+        "all-outputs": true,
+        "format": "{name}",
+        "disable-click": false,
+        "enable-bar": true,
+        "max-width": 0,
+        "min-width": 0,
+        "align": "center",
+    },
     "wlr/taskbar": {
         "format": "{icon}",
         "on-click": "activate",

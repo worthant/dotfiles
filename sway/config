@@ -103,6 +103,24 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 ## Workspaces:
 
+    set $workspace11 "11: Audio"
+    set $workspace12 "12: Jupyter"
+    set $workspace13 "13: Telegram"
+    set $workspace14 "14: Network"
+    set $workspace15 "15: OBS"
+
+    bindsym $mod+Mod1+a workspace $workspace11
+    bindsym $mod+Mod1+j workspace $workspace12
+    bindsym $mod+Mod1+t workspace $workspace13
+    bindsym $mod+Mod1+n workspace $workspace14
+    bindsym $mod+Mod1+o workspace $workspace15
+
+    bindsym $mod+Mod1+Shift+a move container to workspace $workspace11
+    bindsym $mod+Mod1+Shift+j move container to workspace $workspace12
+    bindsym $mod+Mod1+Shift+t move container to workspace $workspace13
+    bindsym $mod+Mod1+Shift+n move container to workspace $workspace14
+    bindsym $mod+Mod1+Shift+o move container to workspace $workspace15
+
     # Switch to workspace
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2

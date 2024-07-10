@@ -37,7 +37,12 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
     - [ ] Use hex color picker for this
   - [ ] Change time format to 24h
   - [ ] !Add a box with current locale (us/ru)
+  - [x] Add config for sway/workspaces
+    - [x] add Names for dedicated workspaces
+    - [ ] add scrolling using keyboard, not only mouse
 - [ ] Sway
+  - [x] Add more workspaces
+    - [x] Make them dedicated (OBS, Telegram, e.t.c.)
   - [ ] Control for mx 3s mouse?
   - [ ] I want some theme picker logic to stop editing paths manually and see
         instant results
