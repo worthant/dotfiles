@@ -6,6 +6,9 @@ Terminal: Kitty
 Shell: fish  
 Editor: Neovim
 
+|![image](https://github.com/worthant/dotfiles/assets/43885024/2303b762-3360-4dca-868d-17b88b385fe0)|
+|-|
+
 ## Dotfiles repo config
 
 1. Clone repo, for example into `~/dev`
