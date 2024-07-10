@@ -32,10 +32,21 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [x] Apply
         [this insane waybar](https://www.reddit.com/r/unixporn/comments/19csv7m/sway_fedora_sway_rice_new_wave_loving_this/)
   - [ ] Customize everything to my liking
+    - [x] Kind of (25%)
+    - [x] Very good (50%)
+    - [x] VERY good (75%)
+    - [ ] VERY GOOD (90%)
+    - [ ] FUCKING INSANE (95%)
+    - [ ] GOD TIER
   - [x] Try rounded corners
-  - [ ] Tweak color theme to the more bright one
-    - [ ] Use hex color picker for this
-  - [ ] Change time format to 24h
+  - [ ] Sound box shouldn't be displayed unless heaphones are connected (shouldn't show constant 100% for no reason)
+  - [ ] Music box should have some icon when the music is stopped
+  - [ ] Add OBS box (insane feaure)
+  - [ ] Do i really need to show cpu box?
+  - [x] Tweak color theme to the more bright one
+    - [x] Use hex color picker for this
+  - [x] Change time format to 24h
+  - [x] Add Custom clocks for both GE & NYC locales, with date in the middle
   - [ ] !Add a box with current locale (us/ru)
   - [x] Add config for sway/workspaces
     - [x] add Names for dedicated workspaces

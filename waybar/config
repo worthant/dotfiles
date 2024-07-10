@@ -13,11 +13,14 @@
 	    "mpd"	
     ],
     "modules-center": [
-        "clock"
+        "custom/tbilisi_clock",
+        "clock",
+        "custom/nyc_clock",
     ],
     "modules-right": [
     	"mpris",
-	    "backlight",
+	    "memory",
+	    "cpu",
 	    "pulseaudio",
         "network",
         "battery",
@@ -84,9 +87,19 @@
         "spacing": 10
     },
     "clock": {
-        "tooltip-format": "<tt>{calendar}</tt>",
-        "format-alt": "   {:%a, %d %b %Y} ",
-        "format": "   {:%I:%M %p} "
+        "format": "   {:%a, %d %b %Y} ",
+        "tooltip": true,
+        "tooltip-format": "<tt>{calendar}</tt>\n",
+    },
+    "custom/tbilisi_clock": {
+        "exec": "date +'  %H:%M GE'",
+        "interval": 1,
+        "tooltip": false
+    },
+    "custom/nyc_clock": {
+        "exec": "TZ='America/New_York' date +'  %H:%M NYC'",
+        "interval": 1,
+        "tooltip": false
     },
     "network": {
         "format-wifi": "{icon} {essid}",

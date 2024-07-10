@@ -220,6 +220,8 @@ bindsym $mod+r mode "resize"
         repeat_rate 50
     }
 
+for_window [class="TelegramDesktop"] titlebar off
+
 ## Beautiful GUI:
 
     # bar
