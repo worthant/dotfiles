@@ -20,7 +20,7 @@
     "modules-right": [
     	"mpris",
 	    "memory",
-	    "cpu",
+	    // "cpu",
 	    "pulseaudio",
         "network",
         "battery",
@@ -112,10 +112,10 @@
             "󰤨 "
         ],
         "tooltip-format-disconnected": "Disconnected",
-        "tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-wifi": "{icon} {ipaddr}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "on-click": "~/.config/rofi/rofi-wifi-menu.sh &",
-        "format-ethernet": "{ifname}",
-        "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "format-ethernet": "󰀂 {ifname}",
+        "tooltip-format-ethernet": "󰀂  {ipaddr}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "nospacing": 1,
         "interval": 5
     },

@@ -42,6 +42,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
     - [ ] FUCKING INSANE (95%)
     - [ ] GOD TIER
   - [x] Try rounded corners
+  - [x] Add IP to network box
   - [ ] Sound box shouldn't be displayed unless heaphones are connected (shouldn't show constant 100% for no reason)
   - [ ] Music box should have some icon when the music is stopped
   - [ ] Add OBS box (insane feaure)
@@ -54,6 +55,9 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [x] Add config for sway/workspaces
     - [x] add Names for dedicated workspaces
     - [ ] add scrolling using keyboard, not only mouse
+- [ ] Network
+  - [ ] Fix the autoconnection to wifi (ethernet first!)
+  - [ ] other network manager that `nmcli`?
 - [ ] Sway
   - [x] Add more workspaces
     - [x] Make them dedicated (OBS, Telegram, e.t.c.)
@@ -62,9 +66,6 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
         instant results
   - [ ] Make rounded corners for tiles
   - [ ] Play with transparency
-  - [ ] Network management?
-    - [x] nmcli
-    - [ ] other gui?
   - [x] Mouse Management? (Logitech MX master 3s)
     - [x] `solaar`
   - [x] Bluetooth management?
