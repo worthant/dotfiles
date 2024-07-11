@@ -1,7 +1,7 @@
 # Worthant's dotfiles
 
 OS: Fedora Linux Workstation 38  
-Tiling VM: Sway  
+Tiling VM: SwayFX  
 Terminal: Kitty  
 Shell: fish  
 Editor: Neovim
@@ -64,8 +64,9 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [ ] Control for mx 3s mouse?
   - [ ] I want some theme picker logic to stop editing paths manually and see
         instant results
-  - [ ] Make rounded corners for tiles
-  - [ ] Play with transparency
+  - [x] Make rounded corners for tiles
+  - [x] Add blur and shadows
+  - [x] Play with transparency
   - [x] Mouse Management? (Logitech MX master 3s)
     - [x] `solaar`
   - [x] Bluetooth management?
@@ -102,11 +103,10 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
     - [ ] Microsoft Teams
     - [x] Google call
       - [x] Check screen sharing (works perfectly)
-- [ ] Kitty
-  - [ ] Tweak theme colors to make it more readable (~too dark rn)
-  - [ ] Add small padding
+- [x] Kitty
+  - [x] Tweak theme colors to make it more readable (~too dark rn)
+  - [x] Add small padding
 - [ ] Nvim
-
   - [ ] Merge `base` & `user` configs into monolithic config
   - [ ] Create a separate repo for mantaining merged config
   - [ ] Add here as a submodule
@@ -116,6 +116,8 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 
 ## Groundbreaking features
 
+- [x] Migrate to `SwayFX`
+  - [x] Add rounded, fucking, borders :tada:
 - [ ] Interactive waybar widget for obs recording status
   - i have a very cool waybar, which has boxes for each widget. i want to add a
     box, that will show up if the obs is currently running and show the status

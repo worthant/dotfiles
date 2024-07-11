@@ -229,6 +229,26 @@ bindsym $mod+r mode "resize"
     gaps inner 20
     default_border none
 
+    # SwayFX window blur
+    blur enable
+    blur_xray disable
+    blur_passes 2
+    blur_radius 3
+    blur_brightness 1.0
+    blur_contrast 1.0
+    blur_saturation 1.0
+
+    # SwayFX window cornerds
+    corner_radius 10
+
+    # SwayFX window shadows
+    shadows enable
+    shadows_on_csd enable
+    shadow_blur_radius 15
+    shadow_color #0000007F
+    shadow_offset 0 10
+    shadow_inactive_color #0000003F
+
     # Rofi application launcher
     bindsym $mod+d exec "rofi -show drun"
 
