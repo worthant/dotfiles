@@ -6,9 +6,9 @@ Terminal: Kitty
 Shell: fish  
 Editor: Neovim
 
-|![image_2024-07-11_20-01-57](https://github.com/worthant/dotfiles/assets/43885024/65a2b51a-b5ad-471d-bb3b-83701a4bc0e4)|
+|![image](https://github.com/user-attachments/assets/ae11ed51-7b74-4c72-bd58-1955d8a80661)|
 |-|
-|![image_2024-07-11_20-01-56](https://github.com/worthant/dotfiles/assets/43885024/081b2b68-10c5-4c2f-9a7e-4133b4539726)|
+|![image](https://github.com/user-attachments/assets/a56d4c13-8caf-4186-9360-f732432dbcaf)|
 
 ## Dotfiles repo config
 
