@@ -11,7 +11,8 @@
         "custom/launcher",
         "sway/workspaces",
         "custom/weather",
-	    "mpd"	
+	    "mpd",
+	    "backlight"
     ],
     "modules-center": [
         "custom/tbilisi_clock",
@@ -45,7 +46,7 @@
         "tooltip-format": "{title}"
     },
     "backlight": {
-        // "device": "acpi_video1",
+        "device": "amdgpu_bl1",
         "format": "{icon} {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
