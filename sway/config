@@ -106,23 +106,32 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 ## Workspaces:
 
-    set $workspace11 "11: Audio"
-    set $workspace12 "12: Jupyter"
-    set $workspace13 "13: Telegram"
-    set $workspace14 "14: Network"
-    set $workspace15 "15: OBS"
+    set $workspace11 "11:  "
+    set $workspace12 "12:  "
+    set $workspace13 "13:  "
+    set $workspace14 "14:  "
+    set $workspace15 "15:  "
+    set $workspace16 "16:  "
+    set $workspace17 "17:  "
+    set $workspace18 "18:  "
 
     bindsym $mod+Mod1+a workspace $workspace11
     bindsym $mod+Mod1+j workspace $workspace12
     bindsym $mod+Mod1+t workspace $workspace13
     bindsym $mod+Mod1+n workspace $workspace14
     bindsym $mod+Mod1+o workspace $workspace15
+    bindsym $mod+Mod1+d workspace $workspace16
+    bindsym $mod+Mod1+g workspace $workspace17
+    bindsym $mod+Mod1+l workspace $workspace18
 
     bindsym $mod+Mod1+Shift+a move container to workspace $workspace11
     bindsym $mod+Mod1+Shift+j move container to workspace $workspace12
     bindsym $mod+Mod1+Shift+t move container to workspace $workspace13
     bindsym $mod+Mod1+Shift+n move container to workspace $workspace14
     bindsym $mod+Mod1+Shift+o move container to workspace $workspace15
+    bindsym $mod+Mod1+Shift+d move container to workspace $workspace16
+    bindsym $mod+Mod1+Shift+g move container to workspace $workspace17
+    bindsym $mod+Mod1+Shift+l move container to workspace $workspace18
 
     # Switch to workspace
     bindsym $mod+1 workspace number 1
