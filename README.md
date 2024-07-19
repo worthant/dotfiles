@@ -1,6 +1,6 @@
 # Worthant's dotfiles
 
-OS: Fedora Linux Workstation 38  
+OS: Fedora Linux Workstation 39  
 Tiling VM: SwayFX  
 Terminal: Kitty  
 Shell: fish  
