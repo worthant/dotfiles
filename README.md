@@ -116,8 +116,8 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [x] Tweak theme colors to make it more readable (~too dark rn)
   - [x] Add small padding
 - [ ] Nvim
-  - [ ] Merge `base` & `user` configs into monolithic config
-  - [ ] Create a separate repo for mantaining merged config
+  - [x] Merge `base` & `user` configs into monolithic config
+  - [x] Create a separate repo for mantaining merged config
   - [ ] Add here as a submodule
 - [ ] Integrate add-ons
       [from here](https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway)
