@@ -21,3 +21,4 @@ configuration {
     run-list-command: "";
     run-shell-command: "{terminal} -e {cmd}";
 }
+@theme "/usr/share/rofi/themes/android_notification.rasi"
