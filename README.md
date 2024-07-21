@@ -21,7 +21,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 
 - The structure should look like this:
 
-```
+```bash
 ~/.config
 ├── sway -> ~/dotfiles/sway
 ├── rofi -> ~/dotfiles/rofi
@@ -143,7 +143,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 - `Kdenlive` (video montage)
 - `Obs`
 - `obs-cmd`
-  - (websockets control for obs across the system) 
+  - (websockets control for obs across the system)
   - install [here](https://github.com/grigio/obs-cmd)
 - `Discord`
 - `Telegram`
