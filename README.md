@@ -131,3 +131,25 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
     box, that will show up if the obs is currently running and show the status
     of the recording - like, if i press a button, the recording starts and i can
     clearly see it
+
+## List of software for good UX
+
+- `Bluetooth manager` (manage bluetooth devices)
+- `PulseAudio Volume Control` (audio mixer)
+- `Cassette` (non-official yandex music client)
+- `Solaar` (control logitech devices (for me - mx3 mouse))
+- `nmcli` (control network via terminal)
+- `brightnessctl` (control brightness via terminal)
+- `Kdenlive` (video montage)
+- `Obs`
+- `obs-cmd`
+  - (websockets control for obs across the system) 
+  - install [here](https://github.com/grigio/obs-cmd)
+- `Discord`
+- `Telegram`
+- `Firefox & Chromium`
+- `Postman`
+- `Software` (GNOME thingie, handy to install from GUI)
+- osu!
+  - `Lazer`
+  - `OpenTabletDriver`
