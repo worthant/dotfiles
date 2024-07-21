@@ -45,7 +45,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
     - [ ] Add weather for Tbilisi
     - [ ] Add weather for Saint-Petersburg
   - [ ] Network
-    - [ ] Fix the autoconnection to wifi (ethernet first!)
+    - [x] Fix the autoconnection to wifi (ethernet first!)
     - [ ] other network manager than `nmcli`?
   - [ ] Add OBS box (insane feaure)
   - [ ] Add shortcuts
@@ -115,10 +115,10 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 - [x] Kitty
   - [x] Tweak theme colors to make it more readable (~too dark rn)
   - [x] Add small padding
-- [ ] Nvim
+- [x] Nvim
   - [x] Merge `base` & `user` configs into monolithic config
   - [x] Create a separate repo for mantaining merged config
-  - [ ] Add here as a submodule
+  - [x] Add here as a submodule
 - [ ] Integrate add-ons
       [from here](https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway)
 
