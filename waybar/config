@@ -12,7 +12,8 @@
         "sway/workspaces",
         "custom/weather",
 	    "mpd",
-	    "backlight"
+	    "backlight",
+	    "custom/locale"
     ],
     "modules-center": [
         "custom/tbilisi_clock",
@@ -28,6 +29,12 @@
         "battery",
         "custom/powermenu"
     ],
+    "custom/locale": {
+        "exec": "~/.config/waybar/scripts/locale.sh",
+        "interval": 1,
+        "format": "{}",
+        "tooltip": false
+    },
     "sway/workspaces": {
         "all-outputs": true,
         "format": "{name}",
@@ -49,31 +56,6 @@
         "device": "amdgpu_bl1",
         "format": "{icon} {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
-    "hyprland/workspaces": {
-        "on-click": "activate",
-        "format": "{icon}",
-        "format-icons": {
-            "default": "",
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6",
-            "7": "7",
-            "8": "8",
-            "9": "9",
-            "active": "󱓻",
-            "urgent": "󱓻"
-        },
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": []
-        }
     },
     "memory": {
         "interval": 5,

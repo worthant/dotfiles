@@ -19,6 +19,7 @@ window#waybar.hidden {
   color: #64727d;
 }
 
+#custom-locale,
 #custom-tbilisi_clock,
 #custom-nyc_clock,
 #clock,
@@ -93,6 +94,7 @@ window#waybar.hidden {
   background: inherit;
 }
 
+#custom-locale,
 #workspaces,
 #custom-ibus,
 #clock,
@@ -287,6 +289,7 @@ window#waybar.hidden {
   padding: 0.5em 1em;
 }
 
+#custom-locale,
 #memory,
 #tray,
 #mode,
@@ -343,3 +346,8 @@ label:focus {
 
 /*My Configs*/
 #backlight {}
+
+#custom-locale {
+  padding-left: 12px;
+  padding-right: 12px;
+}

@@ -38,7 +38,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [ ] Change theme to provide clear space for commands input (takes too much
         space when have long repo/dir names)
 - [ ] Waybar
-  - [ ] !Add a box with current locale (us/ru)
+  - [x] !Add a box with current locale (us/ru)
   - [ ] I want some theme picker logic to stop editing paths manually and see
         instant results
   - [ ] Add weather
