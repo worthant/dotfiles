@@ -83,6 +83,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [x] Change time format to 24h
   - [x] Add Custom clocks for both GE & NYC locales, with date in the middle
 - [ ] Sway
+  - [ ] Try adding rounded borders - white / purple / neon blue - see the results
   - [x] Add more workspaces
     - [x] Make them dedicated (OBS, Telegram, e.t.c.)
   - [x] Control for mx 3s mouse?
