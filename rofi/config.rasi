@@ -14,7 +14,7 @@ configuration {
     line-padding: 2;
     separator-style: "none";
     hide-scrollbar: true;
-    terminal: "alacritty";
+    terminal: "kitty";
     ssh-client: "ssh";
     ssh-command: "{terminal} -e {ssh-client} {host}";
     run-command: "{cmd}";
