@@ -50,6 +50,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
     - [x] Fix the autoconnection to wifi (ethernet first!)
     - [ ] other network manager than `nmcli`?
       - [ ] Add [this](https://github.com/zbaylin/rofi-wifi-menu?tab=readme-ov-file)
+      - [x] Add `nmtui` with desktop entry
       - [ ] Or try setting up nm-applet for network manager
   - [ ] Add OBS box (insane feaure)
   - [ ] Add shortcuts
