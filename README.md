@@ -159,3 +159,5 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 - osu!
   - `Lazer`
   - `OpenTabletDriver`
+- `chafa` (cli command to preview images inside terminal)
+  - Usage: `chafa image.png`
