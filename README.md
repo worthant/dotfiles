@@ -145,8 +145,10 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 - `Cassette` (non-official yandex music client)
 - `Solaar` (control logitech devices (for me - mx3 mouse))
 - `nmcli` (control network via terminal)
+- `NM TUI` (NetworkManager TUI - better than nmcli)
 - `brightnessctl` (control brightness via terminal)
 - `Kdenlive` (video montage)
+- `Darktable` (photo coloring & editing)
 - `Obs`
 - `obs-cmd`
   - (websockets control for obs across the system)
