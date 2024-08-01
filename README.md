@@ -6,10 +6,10 @@ Terminal: Kitty
 Shell: fish  
 Editor: Neovim
 
-| ![image](https://github.com/user-attachments/assets/6fb2ce13-e8b2-4492-addc-6d9ae40ead2c)|
+| ![image](https://github.com/user-attachments/assets/6fb2ce13-e8b2-4492-addc-6d9ae40ead2c)                               |
 | ----------------------------------------------------------------------------------------------------------------------- |
-| Newer ↑|
-| Older ↓|
+| Newer ↑                                                                                                                 |
+| Older ↓                                                                                                                 |
 | ![image_2024-07-11_20-01-56](https://github.com/worthant/dotfiles/assets/43885024/081b2b68-10c5-4c2f-9a7e-4133b4539726) |
 
 ## Dotfiles repo config
@@ -49,7 +49,8 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [ ] Network
     - [x] Fix the autoconnection to wifi (ethernet first!)
     - [ ] other network manager than `nmcli`?
-      - [ ] Add [this](https://github.com/zbaylin/rofi-wifi-menu?tab=readme-ov-file)
+      - [ ] Add
+            [this](https://github.com/zbaylin/rofi-wifi-menu?tab=readme-ov-file)
       - [x] Add `nmtui` with desktop entry
       - [ ] Or try setting up nm-applet for network manager
   - [ ] Add OBS box (insane feaure)
@@ -84,7 +85,8 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [x] Change time format to 24h
   - [x] Add Custom clocks for both GE & NYC locales, with date in the middle
 - [ ] Sway
-  - [ ] Try adding rounded borders - white / purple / neon blue - see the results
+  - [ ] Try adding rounded borders - white / purple / neon blue - see the
+        results
   - [x] Add more workspaces
     - [x] Make them dedicated (OBS, Telegram, e.t.c.)
   - [x] Control for mx 3s mouse?
