@@ -6,13 +6,13 @@ Terminal: Kitty
 Shell: fish  
 Editor: Neovim
 
-| ![image](https://github.com/user-attachments/assets/6fb2ce13-e8b2-4492-addc-6d9ae40ead2c)|
-| ----------------------------------------------------------------------------------------------------------------------- |
-| Darker ↑|
-| Lighter ↓|
+| ![image](https://github.com/user-attachments/assets/6fb2ce13-e8b2-4492-addc-6d9ae40ead2c) |
+| ----------------------------------------------------------------------------------------- |
+| Darker ↑                                                                                  |
+| Lighter ↓                                                                                 |
 | ![image](https://github.com/user-attachments/assets/06657062-04c1-4d3f-9241-fc1d024c0c37) |
 | ![image](https://github.com/user-attachments/assets/bff85183-cf49-4825-a348-51ee59a4e6d9) |
-| ![image](https://github.com/user-attachments/assets/ada0af41-f62d-48a1-b90e-d49a97f8abce)|
+| ![image](https://github.com/user-attachments/assets/ada0af41-f62d-48a1-b90e-d49a97f8abce) |
 
 ## Dotfiles repo config
 
@@ -141,9 +141,12 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
     box, that will show up if the obs is currently running and show the status
     of the recording - like, if i press a button, the recording starts and i can
     clearly see it
+- [ ] Keyboard screencast. So that i can record a video of what i'm doing.
+  - should be catched with obs probably
 
 ## List of software for good UX
 
+- `Neovim` (main **IDE** for everything)
 - `Bluetooth manager` (manage bluetooth devices)
 - `PulseAudio Volume Control` (audio mixer)
 - `Cassette` (non-official yandex music client)
@@ -153,14 +156,22 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 - `brightnessctl` (control brightness via terminal)
 - `Kdenlive` (video montage)
 - `Darktable` (photo coloring & editing)
-- `Obs`
-- `obs-cmd`
+- `TeX Live` - full package for LaTeX preview in `neovim`
+- `pgAdmin` (monitor / work with Postgres databases)
+- `Postman` (Test APIs)
+- `Obs` (record / stream)
+- `obs-cmd` (control obs)
   - (websockets control for obs across the system)
   - install [here](https://github.com/grigio/obs-cmd)
+- `Jupyter` (work with python interactively)
+  - `Desktop`
+  - `Lab`
+  - `jupyter-lsp`
+  - `jedi lsp server`
+  - continious hinting (advanced settings)
 - `Discord`
 - `Telegram`
 - `Firefox & Chromium`
-- `Postman`
 - `Software` (GNOME thingie, handy to install from GUI)
 - osu!
   - `Lazer`
