@@ -79,3 +79,14 @@ set -gx PATH $PATH /usr/bin/pg_config
 
 # Adding pipx bin to PATH
 set -gx PATH $PATH /home/boris/.local/bin
+
+## Add reffie services to Python path
+set -gx PYTHONPATH /home/boris/dev/reffie-serverless/services/reffie-lambda-common-utils $PYTHONPATH
+set -gx PYTHONPATH /home/boris/dev/reffie-serverless/services/reffie-lambda-common-utils-py $PYTHONPATH
+set -gx PYTHONPATH /home/boris/dev/reffie-listing-email-parser $PYTHONPATH
+set -gx PYTHONPATH /home/boris/dev/reffie-backend $PYTHONPATH
+
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

@@ -3,8 +3,8 @@
 OS: Fedora Linux Workstation 39  
 Tiling VM: SwayFX  
 Terminal: Kitty  
-Shell: fish  
-Editor: Neovim
+Shell: fish (`lambda` theme from `oh-my-fish`) 
+Editor: Neovim (`Cattpucin` theme)
 
 | ![image](https://github.com/user-attachments/assets/6fb2ce13-e8b2-4492-addc-6d9ae40ead2c) |
 | ----------------------------------------------------------------------------------------- |
@@ -37,7 +37,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 ## TODO:
 
 - [ ] Fish
-  - [ ] Change theme to provide clear space for commands input (takes too much
+  - [x] Change theme to provide clear space for commands input (takes too much
         space when have long repo/dir names)
 - [ ] Waybar
   - [x] !Add a box with current locale (us/ru)
