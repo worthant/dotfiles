@@ -56,7 +56,7 @@ function mestia
 end
 
 # Automatically swap language on capslock and remove default capslock behaviour
-xmodmap ~/.Xmodmap
+# xmodmap ~/.Xmodmap
 
 # Adding yarn global bin to PATH
 set -gx PATH $PATH /home/boris/.config/yarn/global/node_modules/.bin
