@@ -25,12 +25,12 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ## Graphics configuration:
 
     # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-    output * bg /usr/share/backgrounds/sway/breno-machado-in9-n0JwgZ0-unsplash.jpg fill
+    output * bg /home/boris/docs/wall/michal-zych-qV8VSz-zgkE-unsplash.jpg fill
 
     # exec_always --no-startup-id "~/.config/sway/scripts/select-monitors.sh"
 
     # Disable the laptop monitor (assuming eDP-1)
-    output eDP-1 disable
+    # output eDP-1 disable
     output eDP-1 scale 1.25
     
     # Enable and configure the external monitor (assuming DP-1)
@@ -281,6 +281,19 @@ bindsym $mod+r mode "resize"
 
 
 ## Actual features:
+
+    bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+
+    # Microphone mount
+    bindsym F3 nop
+    bindsym F4 nop
+    bindsym F5 nop
+    bindsym F6 nop
+    bindsym F7 nop
+    bindsym F8 nop
+    bindsym F9 nop
 
     # Fullscreen screenshot to clipboard
     bindsym Control+Shift+Delete exec "grim - | wl-copy"
