@@ -112,8 +112,11 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - [ ] Check if everything works
     - [x] Discord
       - [x] Check screen sharing (works only in browser)
+      - [x] Find a solution: use `Datcord` client from Flatpack, it works inside
+            Firefox, whichsolves problem with screensharing, and also gives
+            ability to zoom using scrolling
     - [x] Zoom
-      - [x] Check screen sharing (everything works firt couple touches, then
+      - [x] Check screen sharing (everything works first couple touches, then
             can't use panels)
     - [x] OBS
       - [x] Check screen sharing (works perfectly smooth)
@@ -169,7 +172,8 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
   - `jupyter-lsp`
   - `jedi lsp server`
   - continious hinting (advanced settings)
-- `Discord`
+- `Datcord` (an unofficial Linux Discord client, runs inside Firefox, which
+  solves screensharing problems)
 - `Telegram`
 - `Firefox & Chromium`
 - `Software` (GNOME thingie, handy to install from GUI)
