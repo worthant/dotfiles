@@ -3,7 +3,7 @@
 OS: Fedora Linux Workstation 39  
 Tiling VM: SwayFX  
 Terminal: Kitty  
-Shell: fish (`lambda` theme from `oh-my-fish`) 
+Shell: fish (`lambda` theme from `oh-my-fish`)  
 Editor: Neovim (`Cattpucin` theme)
 
 | ![image](https://github.com/user-attachments/assets/6fb2ce13-e8b2-4492-addc-6d9ae40ead2c) |
@@ -103,7 +103,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
     - [ ] Create a script for instant auto-connection to my xm4 heaphones
   - [x] Audio management?
     - [x] `PulseAudio`
-    - [ ] Add support for changing the volume using the wheel on my keyboard
+    - [x] Add support for changing the volume using the wheel on my keyboard
   - [x] Dark theme system-wide (GTK)
     - [x] use lxappearance
     - [x] install arc-theme
