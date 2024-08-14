@@ -177,6 +177,9 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 - `Telegram`
 - `Firefox & Chromium`
 - `Software` (GNOME thingie, handy to install from GUI)
+- **For git**:
+  - `lazygit` in neovim
+  - `Sublime merge` for soy devs (free & lightweight & goot git graph)
 - osu!
   - `Lazer`
   - `OpenTabletDriver`
