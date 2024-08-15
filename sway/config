@@ -287,13 +287,16 @@ bindsym $mod+r mode "resize"
 
 
     # Microphone mount
-    bindsym F3 nop
+    # bindsym F3 nop
     bindsym F4 nop
     bindsym F5 nop
     bindsym F6 nop
     bindsym F7 nop
     bindsym F8 nop
     bindsym F9 nop
+
+    # Screens toggle in stack mode with only left hand (hjkl is too far)
+    bindsym F3 focus down
 
     # Fullscreen screenshot to clipboard
     bindsym Control+Shift+Delete exec "grim - | wl-copy"
