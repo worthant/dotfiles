@@ -48,7 +48,7 @@ function cmp
 end
 
 function home
-    ssh boris@192.168.1.36
+    ssh boris@172.30.55.241
 end
 
 function mestia
@@ -90,3 +90,12 @@ set -gx PYTHONPATH /home/boris/dev/reffie-backend $PYTHONPATH
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# pyenv
+set -x PYENV_ROOT $HOME/.pyenv
+set -x PATH $PYENV_ROOT/bin $PATH
+
+status --is-interactive; and source (pyenv init --path | psub)
+status --is-interactive; and source (pyenv init - | psub)
+
+status --is-interactive; and source (pyenv virtualenv-init - | psub)
