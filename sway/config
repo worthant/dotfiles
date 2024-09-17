@@ -1,4 +1,4 @@
-# Default config for sway
+# Default config for swa
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
@@ -25,16 +25,22 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ## Graphics configuration:
 
     # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-    output * bg /home/boris/docs/wall/michal-zych-qV8VSz-zgkE-unsplash.jpg fill
+    output * bg /home/boris/docs/wall/best_bg.png fill
 
     # exec_always --no-startup-id "~/.config/sway/scripts/select-monitors.sh"
 
-    # Disable the laptop monitor (assuming eDP-1)
-    # output eDP-1 disable
+    # Disable/enable the laptop monitor
+    bindsym F9 output eDP-1 enable
+    bindsym F8 output eDP-1 disable
     output eDP-1 scale 1.25
     
-    # Enable and configure the external monitor (assuming DP-1)
-    output DP-1 resolution 1920x1080 position 0,0
+    ## Enable and configure the external monitors (Display Port 1 (can also use HDMI-A-1))
+
+    # Full HD
+    # output DP-1 resolution 1920x1080 position 0,0
+
+    # UltraWide (21:9)
+    output DP-1 resolution 3440x1440 position 0,0
 
 
 ### Input configuration
@@ -292,8 +298,8 @@ bindsym $mod+r mode "resize"
     bindsym F5 nop
     bindsym F6 nop
     bindsym F7 nop
-    bindsym F8 nop
-    bindsym F9 nop
+    # bindsym F8 nop
+    # bindsym F9 nop
 
     # Screens toggle in stack mode with only left hand (hjkl is too far)
     bindsym F3 focus down
