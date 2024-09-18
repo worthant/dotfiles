@@ -76,7 +76,7 @@
         "tooltip-format": "<tt>{calendar}</tt>\n",
     },
     "custom/tbilisi_clock": {
-        "exec": "date +'  %H:%M GE'",
+        "exec": "date +'  %H:%M RU'",
         "interval": 1,
         "tooltip": false
     },
