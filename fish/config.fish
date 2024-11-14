@@ -29,6 +29,20 @@ function hel
     ssh s368090@se.ifmo.ru -p 2222
 end
 
+function vps
+    ssh root@70.34.206.129
+end
+
+alias os="/home/boris/dev/xv6-riscv-labs-worthant/ci/docker/run.sh"
+
+function bri
+    if test (count  $argv) -eq 1
+        brightnessctl set $argv[1]
+    else
+        echo "Invalid number of args"
+    end
+end
+
 function cmp
     if test (count $argv) -eq 1
         # Appends _out to the file name for the output executable
@@ -94,6 +108,9 @@ set --export PATH $BUN_INSTALL/bin $PATH
 # pyenv
 set -x PYENV_ROOT $HOME/.pyenv
 set -x PATH $PYENV_ROOT/bin $PATH
+
+# Vivado Design Suite problem with Sway VM
+set -Ux _JAVA_AWT_WM_NONREPARENTING 1
 
 status --is-interactive; and source (pyenv init --path | psub)
 status --is-interactive; and source (pyenv init - | psub)
