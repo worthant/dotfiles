@@ -133,6 +133,8 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     set $workspace18 " "
     # Learning
     set $workspace19 " "
+    # Virtual machines
+    set $workspace20 "🌕"
 
     bindsym $mod+Mod1+a workspace $workspace11
     bindsym $mod+Mod1+m workspace $workspace12
@@ -143,6 +145,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+Mod1+d workspace $workspace17
     bindsym $mod+Mod1+g workspace $workspace18
     bindsym $mod+Mod1+l workspace $workspace19
+    bindsym $mod+Mod1+v workspace $workspace20
 
     bindsym $mod+Mod1+Shift+a move container to workspace $workspace11
     bindsym $mod+Mod1+Shift+m move container to workspace $workspace12
@@ -153,6 +156,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+Mod1+Shift+d move container to workspace $workspace17
     bindsym $mod+Mod1+Shift+g move container to workspace $workspace18
     bindsym $mod+Mod1+Shift+l move container to workspace $workspace19
+    bindsym $mod+Mod1+Shift+v move container to workspace $workspace20
 
 
   ## Base workspaces:
