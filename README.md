@@ -8,11 +8,11 @@ Editor: Neovim (`Cattpucin` theme)
 
 | ![image](https://github.com/user-attachments/assets/6fb2ce13-e8b2-4492-addc-6d9ae40ead2c) |
 | ----------------------------------------------------------------------------------------- |
-| Darker ↑                                                                                  |
-| Lighter ↓                                                                                 |
+| ![image](https://github.com/user-attachments/assets/c85a6d8c-7a0a-4449-bd3f-25087f14752f) |
+| ![image](https://github.com/user-attachments/assets/92ed1be0-820f-47c1-99e0-413b9db3da3f) |
 | ![image](https://github.com/user-attachments/assets/06657062-04c1-4d3f-9241-fc1d024c0c37) |
+| ![image](https://github.com/user-attachments/assets/2025ba3a-54cb-4b21-af8e-fe83094e89b4) |
 | ![image](https://github.com/user-attachments/assets/bff85183-cf49-4825-a348-51ee59a4e6d9) |
-| ![image](https://github.com/user-attachments/assets/ada0af41-f62d-48a1-b90e-d49a97f8abce) |
 
 ## Dotfiles repo config
 
@@ -41,7 +41,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
         space when have long repo/dir names)
 - [ ] Waybar
   - [x] !Add a box with current locale (us/ru)
-  - [ ] I want some theme picker logic to stop editing paths manually and see
+  - [x] I want some theme picker logic to stop editing paths manually and see
         instant results
   - [ ] Add weather
     - [ ] Fix script for custom feather
@@ -74,7 +74,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
     - [x] Very good (50%)
     - [x] VERY good (75%)
     - [x] VERY GOOD (90%)
-    - [ ] FUCKING INSANE (95%)
+    - [x] FUCKING INSANE (95%)
     - [ ] GOD TIER
   - [x] Apply
         [this insane waybar](https://www.reddit.com/r/unixporn/comments/19csv7m/sway_fedora_sway_rice_new_wave_loving_this/)
