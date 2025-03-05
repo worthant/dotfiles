@@ -33,7 +33,8 @@ function vps
     ssh root@70.34.206.129
 end
 
-alias os="/home/boris/dev/xv6-riscv-labs-worthant/ci/docker/run.sh"
+alias os="/home/boris/dev/os-advanced-course/ci/docker/run.sh"
+alias get_idf='. $HOME/esp/esp-idf/export.fish'
 
 function bri
     if test (count  $argv) -eq 1
@@ -61,16 +62,24 @@ function cmp
     end
 end
 
+# Connect to home server on fedora server os
 function home
     ssh boris@172.30.55.241
 end
 
-function mestia
-    ssh boris@172.30.55.241
+# Connect to home raspberry pi 5
+function rpi
+    ssh boris@172.30.55.222
 end
 
 # Automatically swap language on capslock and remove default capslock behaviour
 # xmodmap ~/.Xmodmap
+
+
+### ENV ###
+
+# Fix XDG_DATA_HOME for Snap (VS Code)
+set -x XDG_DATA_HOME /home/boris/.local/share
 
 # Adding yarn global bin to PATH
 set -gx PATH $PATH /home/boris/.config/yarn/global/node_modules/.bin
@@ -111,6 +120,10 @@ set -x PATH $PYENV_ROOT/bin $PATH
 
 # Vivado Design Suite problem with Sway VM
 set -Ux _JAVA_AWT_WM_NONREPARENTING 1
+
+# Earlink project
+set -gx IDF_PATH "$HOME/esp/esp-idf"
+set -gx ADF_PATH "$HOME/esp/esp-adf"
 
 status --is-interactive; and source (pyenv init --path | psub)
 status --is-interactive; and source (pyenv init - | psub)

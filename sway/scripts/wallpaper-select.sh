@@ -1,110 +1,76 @@
-#!/bin/bash
-# Save as ~/.config/sway/scripts/wallpaper-picker.sh
+#!/usr/bin/env bash
+## Wallpaper Selector for SwayFX
+## Integrates with existing Rofi configuration
 
+# Directories
 WALLPAPER_DIR="$HOME/docs/wall"
 CACHE_DIR="$HOME/.cache/wallpaper-thumbs"
+ROFI_CONFIG_DIR="$HOME/.config/rofi"
 
 # Create cache directory
 mkdir -p "$CACHE_DIR"
 
-# Generate thumbnails (if they don't exist)
+# Generate thumbnails for wallpapers (if needed)
 find "$WALLPAPER_DIR" -type f \( -name "*.jpg" -o -name "*.png" \) | while read -r img; do
-    thumb="$CACHE_DIR/$(basename "$img").thumb.png"
-    if [ ! -f "$thumb" ]; then
-        convert "$img" -thumbnail 200x200 "$thumb" || \
-        magick "$img" -thumbnail 200x200 "$thumb" || \
-        echo "Thumbnail creation failed for $img - install ImageMagick"
+    filename=$(basename "$img")
+    thumb="$CACHE_DIR/${filename}.thumb.png"
+    if [ ! -f "$thumb" ] || [ "$img" -nt "$thumb" ]; then
+        if command -v convert &> /dev/null; then
+            convert "$img" -thumbnail 200x200 -gravity center -extent 200x200 "$thumb"
+        else
+            cp "$img" "$thumb"
+        fi
     fi
 done
 
-# Function to preview wallpaper
+# Function to apply wallpaper
 apply_wallpaper() {
-    local wall="$1"
-    if [ -f "$wall" ]; then
-        # Apply wallpaper using swaymsg (works reliably with SwayFX)
-        swaymsg "output * bg '$wall' fill"
+    local wallpaper="$1"
+    if [ -f "$wallpaper" ]; then
+        # Apply wallpaper using swaymsg
+        swaymsg "output * bg '$wallpaper' fill"
         
-        # Optional: Save to config for persistence
-        sed -i "s|output \* bg .* fill|output * bg '$wall' fill|" "$HOME/.config/sway/config"
+        # Save to config for persistence
+        sed -i "s|output \* bg .* fill|output * bg '$wallpaper' fill|" "$HOME/.config/sway/config"
         
-        # Optional: Show notification
-        notify-send "Wallpaper" "Applied: $(basename "$wall")" -i "$wall"
-        
-        # Save current wallpaper
-        echo "$wall" > "$HOME/.cache/current_wallpaper"
+        # Notify user
+        if command -v notify-send &> /dev/null; then
+            notify-send -i "$wallpaper" "Wallpaper Changed" "$(basename "$wallpaper")"
+        fi
     fi
 }
 
-# Build a list of wallpapers with their timestamps for sorting
-build_wallpaper_list() {
-    local sort_mode="$1"
-    local wall_list=""
-    
-    case "$sort_mode" in
-        "recent")
-            # Sort by modification time (newest first)
-            wall_list=$(find "$WALLPAPER_DIR" -type f \( -name "*.jpg" -o -name "*.png" \) -printf "%T@ %p\n" | sort -nr | cut -d' ' -f2-)
-            ;;
-        "name")
-            # Sort by filename
-            wall_list=$(find "$WALLPAPER_DIR" -type f \( -name "*.jpg" -o -name "*.png" \) | sort)
-            ;;
-        "random")
-            # Randomize order
-            wall_list=$(find "$WALLPAPER_DIR" -type f \( -name "*.jpg" -o -name "*.png" \) | sort -R)
-            ;;
-        *)
-            # Default sorting
-            wall_list=$(find "$WALLPAPER_DIR" -type f \( -name "*.jpg" -o -name "*.png" \))
-            ;;
-    esac
-    
-    echo "$wall_list"
-}
+# Get list of wallpapers
+WALLPAPERS=$(find "$WALLPAPER_DIR" -type f \( -name "*.jpg" -o -name "*.png" \) | sort)
 
-# Show Rofi with enhanced theme and preview capabilities
-show_rofi_selector() {
-    # Get wallpaper list (default to name sorting)
-    wallpapers=$(build_wallpaper_list "name")
-    
-    # Launch Rofi with custom configuration for wallpaper selection
-    selected=$(echo "$wallpapers" | rofi -dmenu \
-        -i \
-        -p "Select Wallpaper" \
-        -show-icons \
-        -theme-str 'window {transparency: "real"; background-color: rgba(0,0,0,0.75); width: 80%; height: 70%;}' \
-        -theme-str 'listview {columns: 3; lines: 3; spacing: 12px;}' \
-        -theme-str 'element {orientation: vertical; padding: 15px; border-radius: 12px;}' \
-        -theme-str 'element-icon {size: 15em;}' \
-        -kb-custom-1 "Alt+p" \
-        -kb-custom-2 "Alt+r" \
-        -kb-custom-3 "Alt+n" \
-        -kb-custom-4 "Alt+s" \
-        -mesg "↑↓: Navigate | Alt+p: Preview | Alt+r: Random | Alt+n: Sort by Name | Alt+s: Sort by Recent")
-    
-    # Handle custom key bindings
-    if [ "$?" -eq 10 ]; then
-        # Alt+p was pressed - preview the current selection
-        apply_wallpaper "$selected"
-        # Call the selector again to continue browsing
-        show_rofi_selector
-    elif [ "$?" -eq 11 ]; then
-        # Alt+r was pressed - resort randomly
-        wallpapers=$(build_wallpaper_list "random")
-        show_rofi_selector
-    elif [ "$?" -eq 12 ]; then
-        # Alt+n was pressed - sort by name
-        wallpapers=$(build_wallpaper_list "name")
-        show_rofi_selector
-    elif [ "$?" -eq 13 ]; then
-        # Alt+s was pressed - sort by recent
-        wallpapers=$(build_wallpaper_list "recent")
-        show_rofi_selector
-    elif [ -n "$selected" ]; then
-        # Apply wallpaper if something was selected
-        apply_wallpaper "$selected"
-    fi
-}
+# Create a formatted list using rofi's icon syntax
+FORMATTED_LIST=""
+for wall in $WALLPAPERS; do
+    filename=$(basename "$wall")
+    thumb="$CACHE_DIR/${filename}.thumb.png"
+    FORMATTED_LIST+="$wall\0icon\x1f$thumb\n"
+done
 
-# Main execution
-show_rofi_selector
+# Instead of creating a custom theme file, we'll use theme-str to override specific properties
+# This avoids the import path issues
+chosen=$(echo -en "$FORMATTED_LIST" | rofi -dmenu \
+    -i \
+    -p "Select Wallpaper" \
+    -theme "$ROFI_CONFIG_DIR/launchers/type-3/style-10.rasi" \
+    -theme-str 'window {transparency: true; background-color: rgba(0, 0, 0, 0.8);}' \
+    -theme-str 'listview {columns: 4; lines: 4; spacing: 10px;}' \
+    -theme-str 'element {orientation: vertical; padding: 20px;}' \
+    -theme-str 'element-icon {size: 120px;}' \
+    -preview "swaymsg output * bg '{1}' fill >/dev/null" \
+    -kb-custom-2 "Alt+r" \
+    -mesg "↑↓: Navigate | Enter: Apply | Alt+r: Random")
+
+# Handle result based on exit code
+exit_code=$?
+if [ $exit_code -eq 0 ] && [ -n "$chosen" ]; then
+    apply_wallpaper "$chosen"
+elif [ $exit_code -eq 11 ]; then
+    # Alt+r pressed - Random sort
+    RANDOM_WALLPAPER=$(echo "$WALLPAPERS" | sort -R | head -n 1)
+    apply_wallpaper "$RANDOM_WALLPAPER"
+fi

@@ -1,6 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export CHROME_BIN:/usr/bin/chromium\x2dbrowser
+SETUVAR --export --path PATH:/usr/local/bin\x1e/usr/bin\x1e/home/boris/\x2epyenv/plugins/pyenv\x2dvirtualenv/shims\x1e/home/boris/\x2epyenv/shims\x1e/home/boris/\x2epyenv/bin\x1e/home/boris/\x2ebun/bin\x1e/home/boris/\x2ecargo/bin\x1e/home/boris/\x2epyenv/bin\x1e/home/boris/\x2ebun/bin\x1e/home/boris/\x2ecargo/bin\x1e/home/boris/\x2epyenv/bin\x1e/home/boris/\x2ebun/bin\x1e/home/boris/\x2ecargo/bin\x1e/usr/local/bin\x1e/usr/local/sbin\x1e/usr/bin\x1e/usr/sbin\x1e/var/lib/snapd/snap/bin\x1e/home/boris/\x2econfig/yarn/global/node_modules/\x2ebin\x1e/usr/lib/jvm/java\x2d17\x2dopenjdk\x2d17\x2e0\x2e9\x2e0\x2e9\x2d3\x2efc38\x2ex86_64/bin\x1e/usr/lib/jvm/java\x2d17\x2dopenjdk\x2d17\x2e0\x2e9\x2e0\x2e9\x2d3\x2efc38\x2ex86_64/bin/visualvm/visualvm_218/bin\x1e/usr/bin/pg_config\x1e/home/boris/\x2elocal/bin\x1e/home/boris/\x2econfig/yarn/global/node_modules/\x2ebin\x1e/usr/lib/jvm/java\x2d17\x2dopenjdk\x2d17\x2e0\x2e9\x2e0\x2e9\x2d3\x2efc38\x2ex86_64/bin\x1e/usr/lib/jvm/java\x2d17\x2dopenjdk\x2d17\x2e0\x2e9\x2e0\x2e9\x2d3\x2efc38\x2ex86_64/bin/visualvm/visualvm_218/bin\x1e/usr/bin/pg_config\x1e/home/boris/\x2elocal/bin\x1e/home/boris/\x2econfig/yarn/global/node_modules/\x2ebin\x1e/usr/lib/jvm/java\x2d17\x2dopenjdk\x2d17\x2e0\x2e9\x2e0\x2e9\x2d3\x2efc38\x2ex86_64/bin\x1e/usr/lib/jvm/java\x2d17\x2dopenjdk\x2d17\x2e0\x2e9\x2e0\x2e9\x2d3\x2efc38\x2ex86_64/bin/visualvm/visualvm_218/bin\x1e/usr/bin/pg_config\x1e/home/boris/\x2elocal/bin
+SETUVAR --export _JAVA_AWT_WM_NONREPARENTING:1
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
