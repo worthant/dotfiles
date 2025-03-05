@@ -1,11 +1,7 @@
-# Default config for swa
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
+# need this for wallpaper selection
+exec --no-startup-id swww-daemon
 
 ### Variables
-#
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 set $alt Mod1
@@ -14,18 +10,16 @@ set $left h
 set $down j
 set $up k
 set $right l
-# Your preferred terminal emulator
+# terminal emulator
 set $term kitty
 # Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 
 ## Graphics configuration:
 
     # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-    output * bg /home/boris/docs/wall/best_bg.png fill
+    output * bg '/home/boris/docs/wall/nebulae/1.jpg' fill
 
     # exec_always --no-startup-id "~/.config/sway/scripts/select-monitors.sh"
 
@@ -288,6 +282,8 @@ bindsym $mod+r mode "resize"
 
     # Rofi application launcher
     bindsym $mod+d exec "rofi -show drun"
+    bindsym $mod+Tab exec "rofi -show window"
+    bindsym $mod+period exec "rofi -show emoji"
 
 
 ## Actual features:
@@ -317,5 +313,9 @@ bindsym $mod+r mode "resize"
 
     # OBS cli websocket control
     bindsym Control+Shift+o exec obs-cmd recording toggle
+
+    # Automatic background selection
+    exec swww-daemon
+    bindsym $mod+Shift+w exec "~/.config/sway/scripts/wallpaper-select.sh"
 
 include /etc/sway/config.d/*
