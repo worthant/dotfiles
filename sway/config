@@ -19,7 +19,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ## Graphics configuration:
 
     # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-    output * bg '/home/boris/docs/wall/nebulae/1.jpg' fill
+    output * bg '/home/boris/docs/wall/nebulae/5.jpg' fill
 
     # exec_always --no-startup-id "~/.config/sway/scripts/select-monitors.sh"
 
@@ -295,10 +295,10 @@ bindsym $mod+r mode "resize"
 
     # Microphone mount
     # bindsym F3 nop
-    bindsym F4 nop
-    bindsym F5 nop
-    bindsym F6 nop
-    bindsym F7 nop
+    # bindsym F4 nop
+    # bindsym F5 nop
+    # bindsym F6 nop
+    # bindsym F7 nop
     # bindsym F8 nop
     # bindsym F9 nop
 
@@ -317,5 +317,11 @@ bindsym $mod+r mode "resize"
     # Automatic background selection
     exec swww-daemon
     bindsym $mod+Shift+w exec "~/.config/sway/scripts/wallpaper-select.sh"
+
+    # transparent windows
+    for_window [app_id="org.telegram.desktop"] opacity 0.96
+    for_window [app_id="space.rirusha.Cassette"] opacity 0.87
+    for_window [app_id="blueman-manager"] opacity 0.87
+    for_window [app_id="pavucontrol"] opacity 0.87
 
 include /etc/sway/config.d/*
