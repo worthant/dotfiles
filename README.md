@@ -31,6 +31,7 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 ├── rofi -> ~/dotfiles/rofi
 ├── waybar -> ~/dotfiles/waybar
 ├── fish -> ~/dotfiles/fish
+├── chrome -> ~/.mozilla/firefox/XXXXXXX.default-XXXXXXX/
 └── nvim -> ~/dotfiles/nvim
 ```
 

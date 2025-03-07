@@ -1,0 +1,60 @@
+/*----------------------------------------------------------
+UI model:
+	#navigator-toolbox
+		#titlebar
+			#toolbar-menubar
+			#TabsToolbar
+		#nav-bar
+		#PersonalToolbar
+	#browser
+*/
+
+/* bring the browser window to the top */
+#browser {
+    -moz-box-ordinal-group: 0 !important;
+    order: 0 !important;
+}
+
+/* push all the toolbars to the bottom */
+#navigator-toolbox,
+/* after version 119 */
+#navigator-toolbox-background {
+    /* before version 119 */
+    -moz-box-ordinal-group: 1 !important;
+    order: 1 !important;
+}
+
+*|*:root[sizemode='normal'] #browser {
+    padding-top: 0 !important;
+}
+
+*|*:root[sizemode='normal'] #browser {
+    border-top: 0.5px solid AccentColor !important;
+}
+
+*|*:root[sizemode='normal']:-moz-window-inactive #browser {
+    border-top-color: rgb(57, 57, 57) !important;
+}
+
+*|*:root[sizemode='maximized'] #navigator-toolbox {
+    border-top: 0.5px solid AccentColor !important;
+    border-bottom: 0.5px solid AccentColor !important;
+}
+
+*|*:root[inFullscreen] #navigator-toolbox {
+  display: none;
+}
+
+/* Hige tabs toolbar completely */
+#TabsToolbar {
+    visibility: collapse;
+}
+
+/*fix pop-ups opening below window*/
+#urlbar[open] {
+    display: flex !important;
+    flex-direction: column-reverse;
+    /* use 'column' if you want to type the URL in center*/
+    bottom: -2px !important;
+    top: auto !important;
+}
