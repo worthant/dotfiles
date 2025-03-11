@@ -138,6 +138,11 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 
 ## Groundbreaking features
 
+- [ ] Flexible screens support
+  - [ ] Figure out why the wallpaper select feature isn't working sometimes when
+        monitors are switched between home and work)
+  - [ ] Make/use some utility for discovering & using & configuring multiple
+        inputs, like from proector, different monitors, camera e.t.c.
 - [x] Migrate to `SwayFX`
   - [x] Add rounded, fucking, borders :tada:
 - [ ] Interactive waybar widget for obs recording status
