@@ -19,7 +19,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ## Graphics configuration:
 
     # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-    output * bg '/home/boris/docs/wall/nebulae/5.jpg' fill
+    output * bg '/home/boris/docs/wall/nebulae/2.jpg' fill
 
     # exec_always --no-startup-id "~/.config/sway/scripts/select-monitors.sh"
 
@@ -315,7 +315,6 @@ bindsym $mod+r mode "resize"
     bindsym Control+Shift+o exec obs-cmd recording toggle
 
     # Automatic background selection
-    exec swww-daemon
     bindsym $mod+Shift+w exec "~/.config/sway/scripts/wallpaper-select.sh"
 
     # transparent windows
