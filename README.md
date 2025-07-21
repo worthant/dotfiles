@@ -138,15 +138,20 @@ ln -s ~/dev/dotfiles/sway ~/.config/sway
 
 ## Groundbreaking features
 
-- [ ] Flexible screens support
+- [ ] Figure out screens mgmt
   - [ ] Figure out why the wallpaper select feature isn't working sometimes when
         monitors are switched between home and work)
   - [ ] Make/use some utility for discovering & using & configuring multiple
         inputs, like from proector, different monitors, camera e.t.c.
+  - [ ] When multiple monitors
+    - [ ] display each one's number for easier navigation
+    - [ ] configure splitting side & direction & overall monitor location
 - [x] Migrate to `SwayFX`
   - [x] Add rounded, fucking, borders :tada:
-- [ ] Interactive waybar widget for obs recording status
-  - i have a very cool waybar, which has boxes for each widget. i want to add a
+- [ ] OBS
+  - [ ] configure recording area the same way as i'm taking screenshot, if possible.
+  - [ ] Interactive waybar widget for obs recording status
+    - i have a very cool waybar, which has boxes for each widget. i want to add a
     box, that will show up if the obs is currently running and show the status
     of the recording - like, if i press a button, the recording starts and i can
     clearly see it
