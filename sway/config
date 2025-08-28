@@ -34,7 +34,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     # output DP-1 resolution 1920x1080 position 0,0
 
     # UltraWide (21:9)
-    output DP-1 resolution 3440x1440 position 0,0
+    output DP-1 resolution 3440x1440 position 2520,0
 
 
 ### Input configuration
