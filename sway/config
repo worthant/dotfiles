@@ -19,7 +19,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ## Graphics configuration:
 
     # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-    output * bg '/home/boris/docs/wall/nebulae/2.jpg' fill
+    output * bg '/home/boris/docs/wall/pawel-czerwinski-SD1VYMwGICo-unsplash.jpg' fill
 
     # exec_always --no-startup-id "~/.config/sway/scripts/select-monitors.sh"
 
