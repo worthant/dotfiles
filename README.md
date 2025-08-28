@@ -9,6 +9,7 @@ Editor: Neovim (`Cattpucin` theme)
 | ![image](https://github.com/user-attachments/assets/6fb2ce13-e8b2-4492-addc-6d9ae40ead2c) |
 | ----------------------------------------------------------------------------------------- |
 | ![image](https://github.com/user-attachments/assets/b328100b-04f5-41b1-bc7a-056f3edb5a79) |
+| ![image](https://github.com/user-attachments/assets/0bc0ae09-eacf-4d79-990e-dabd970be37f) |
 | ![image](https://github.com/user-attachments/assets/c85a6d8c-7a0a-4449-bd3f-25087f14752f) |
 | ![image](https://github.com/user-attachments/assets/06657062-04c1-4d3f-9241-fc1d024c0c37) |
 | ![image](https://github.com/user-attachments/assets/2025ba3a-54cb-4b21-af8e-fe83094e89b4) |
