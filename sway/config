@@ -26,7 +26,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     # Disable/enable the laptop monitor
     bindsym F9 output eDP-1 enable
     bindsym F8 output eDP-1 disable
-    output eDP-1 scale 1.25
+    output eDP-1 position 0,0 scale 1.25
     
     ## Enable and configure the external monitors (Display Port 1 (can also use HDMI-A-1))
 
@@ -36,6 +36,8 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     # UltraWide (21:9)
     output DP-1 resolution 3440x1440 position 2520,0
 
+    # HDMI Monitor - positioned below the main monitor for vertical split
+    output HDMI-A-1 resolution 1920x1080 position 0,1440
 
 ### Input configuration
 #
