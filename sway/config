@@ -322,5 +322,6 @@ bindsym $mod+r mode "resize"
     for_window [app_id="space.rirusha.Cassette"] opacity 0.87
     for_window [app_id="blueman-manager"] opacity 0.87
     for_window [app_id="pavucontrol"] opacity 0.87
+    for_window [app_id="yandex-music"] opacity 0.6
 
 include /etc/sway/config.d/*
