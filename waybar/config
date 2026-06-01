@@ -18,9 +18,10 @@
     "modules-center": [
         "custom/tbilisi_clock",
         "clock",
-        "custom/nyc_clock",
+        "custom/nyc_clock"
     ],
     "modules-right": [
+        "tray",
     	"mpris",
 	    "memory",
 	    // "cpu",
@@ -202,5 +203,5 @@
          "exec": "~/.config/waybar/weather-waybar-module.sh",
          "exec-if": "ping openweathermap.org -c1",
          "signal": 8
-     },
+     }
 }
